@@ -11,7 +11,7 @@
 //Symbol
 const id = Symbol("123")
 const newid = Symbol("123")
-console.log(id == newid)   // output is false
+// console.log(id == newid)   // output is false
 
 const BigINT = 123423543354334n   //eg of big int last mei n jrur lgana
 
@@ -22,3 +22,25 @@ let myObj={
     Name: "Abhivandit",   // : and , yeh lgana jruri hai
     Age : 20,
 }
+
+//Type of memory
+//Stack and Heap memory
+
+//Stack(Primitive  : copy  milti hai)   , Heap(Non Primitive : Refrence milta hai)
+
+let myYoutubename = "AbhivanditSharma"
+let anothername = myYoutubename
+anothername = "AbhaySharma"
+console.log(myYoutubename)
+console.log(anothername)
+
+let user = {
+    email: "Abhivanditsharma@gmail.com",
+    upiID: 239828423
+}
+
+let userTwo = user
+
+userTwo.email = "pqrs.com"
+console.log(user.email)
+console.log(userTwo.email)
